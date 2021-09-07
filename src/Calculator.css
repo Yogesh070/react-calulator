@@ -1,0 +1,29 @@
+.key{
+    padding: 10px;
+    border-radius: 4px;
+    color:white;
+    cursor: pointer;
+    width: 60px;
+    background-color: #282B33;
+    margin: 8px;
+    display: inline-grid;
+}
+
+.numbers-key{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+body{
+    background-color: #22252D;
+}
+.screen{
+    text-align: right;
+    color: #ffff;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+.calculator{
+    margin: 10px 50px;
+}
