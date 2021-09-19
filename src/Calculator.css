@@ -75,3 +75,8 @@ body{
     text-align: left;
     overflow: hidden;
 }
+@media(max-width: 600px) {
+    .hidden{
+        display: none;
+    }
+  }

@@ -57,7 +57,7 @@ function Calculator() {
     }
     return (
         <div className="calculator">
-            <div className="history-log">
+            <div className="history-log hidden">
                 {historyLog.reverse().map(history=><h2 style={{color:generateRandomColor()}}>{history}</h2>)}
             </div>
             <div className="calculator-body">
