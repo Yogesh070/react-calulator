@@ -7,12 +7,13 @@
     background-color: #282B33;
     margin: 8px;
     display: inline-grid;
+    font-weight: bold;
 }
 
 .numbers-key{
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 body{
     background-color: #22252D;
