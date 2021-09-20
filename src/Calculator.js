@@ -33,13 +33,20 @@ function Calculator() {
         setscreenDigit('0')
     }
     function evil(fn) {
+        // eslint-disable-next-line
         return new Function('return ' + fn)();
       }
       
     const calulateResult=()=>{
         if (screenDigit.length===1) return
         let result =evil(screenDigit);
-        setscreenDigit(result.toFixed(3).toString())
+        if (result.toString().includes('.')) {
+           setscreenDigit(result.toFixed(3).toString());
+        }
+        else{
+          setscreenDigit(result.toString());  
+        }
+        
         sethistoryLog([...historyLog,`${screenDigit}=${result}`])
     }
     const randomNum=()=>{
@@ -71,7 +78,7 @@ function Calculator() {
                     <div className="top-pad">
                     <Key keyboardKey='AC' onTap={clearScreen} color='#229A89' />
                     <Key keyboardKey='%' onTap={()=>onOperationButtonClick('%')} color='#229A89' />
-                    <Key keyboardKey={'Random'} onTap={randomNum}/>
+                    <Key keyboardKey={'Ran'} onTap={randomNum}/>
 
                     </div>
                     <div className="numbers-key">
