@@ -16,8 +16,6 @@ function Calculator() {
             setscreenDigit('')
         }
         setscreenDigit(prev=>prev + button);
-
-        console.log(screenDigit);
     }
     const onOperationButtonClick=(operationKey)=>{
         let checker=false;
@@ -65,7 +63,7 @@ function Calculator() {
     return (
         <div className="calculator">
             <div className="history-log hidden">
-                {historyLog.reverse().map(history=><h2 style={{color:generateRandomColor()}}>{history}</h2>)}
+                {historyLog.reverse().map((history,index)=><h2 key={index} style={{color:generateRandomColor()}}>{history}</h2>)}
             </div>
             <div className="calculator-body">
                 <div className="screen">
