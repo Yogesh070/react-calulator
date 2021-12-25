@@ -31,7 +31,6 @@ function Calculator() {
         setscreenDigit('0')
     }
     function evil(fn) {
-        // eslint-disable-next-line
         return new Function('return ' + fn)();
       }
       
@@ -52,7 +51,6 @@ function Calculator() {
         setscreenDigit(screenDigit + Math.floor(randomNum));
     }
     const backSpace=()=>{
-        console.log('hi');
         console.log(screenDigit.substring(0,screenDigit.length-1));
         setscreenDigit(prev=>prev.substring(0, screenDigit.length - 1));
     }
