@@ -2,7 +2,7 @@
   "name": "react-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://yogesh070.github.io/calculator",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
